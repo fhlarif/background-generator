@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "browserify script.js > bundle.js && live-server"
+    "build": "npm install lodash && browserify script.js > bundle.js && live-server"
   },
   "repository": {
     "type": "git",
