@@ -1,15 +1,14 @@
+var _ = require('lodash');
 var css = document.querySelector("h3");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var button = document.querySelector(".random");
 var body = document.querySelector("#gradient")
-var window = window;
 
-function initialBackground() {
-    body.style.background = "linear-gradient(to right," + color1.value + "," + color2.value + ")";
-    css.textContent = body.style.background + ";";
 
-}
+var array = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log('answer:', _.without(array, 3));
+
 
 function setGradient() {
     body.style.background = "linear-gradient(to right," + color1.value + "," + color2.value + ")";
@@ -24,13 +23,16 @@ function randomRGB() {
     css.textContent = body.style.background + ";";
     return body.style.background;
 }
+function initialBackground() {
+    body.style.background = "linear-gradient(to right," + color1.value + "," + color2.value + ")";
+    css.textContent = body.style.background + ";";
 
+}
 
-
-color1.addEventListener("input", setGradient);
-
-color2.addEventListener("input", setGradient);
-
-window.addEventListener("load", initialBackground);
 
 button.addEventListener("click", randomRGB);
+color1.addEventListener("input", setGradient);
+color2.addEventListener("input", setGradient);
+body.addEventListener("load", initialBackground);
+
+

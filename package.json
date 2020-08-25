@@ -1,0 +1,25 @@
+{
+  "name": "background-generator",
+  "version": "1.0.0",
+  "description": "simple background generator using javascript and dom manipulation",
+  "main": "bundle.js",
+  "dependencies": {
+    "babelify": "^10.0.0",
+    "esmify": "^2.1.1",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "browserify script.js > bundle.js && live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fhlarif/background-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fhlarif/background-generator/issues"
+  },
+  "homepage": "https://github.com/fhlarif/background-generator#readme"
+}
